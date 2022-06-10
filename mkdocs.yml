@@ -1,0 +1,105 @@
+# Project information
+site_name: 'BetaInnovation'
+site_description: 'wiki,ops,devops,auto'
+site_author: 'BetaInnovation'
+# site_url: 'https://caimengzhi.gitee.io/nav/'
+
+# Repository
+repo_name: ''
+repo_url: ''
+
+# Copyright
+copyright: 'Copyright &copy; 2021 - 2022 BetaInnovation'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'zh'
+  features:
+    - navigation.tabs
+  palette:
+    scheme: default
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'static/imgs/favicon.ico'
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: iso_datetime
+
+# Customization
+extra:
+  utteranc:
+    repo: ansible
+    issueTerm: pathname
+    theme: github-light
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://caimengzhi.gitee.io/nav/'
+
+# Google Analytics
+#google_analytics:
+#  - 'UA-XXXXXXXX-X'
+#  - 'auto'
+#extra_css:
+#  - 'static/css/base.css'
+#  - 'static/css/bgc.css'
+extra_javascript:
+  - 'static/js/jquery-3.1.1.min.js'
+  #- 'static/js/lite.js'
+  #- 'static/js/lbl.js'
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: caimz
+      repo: ansible
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed
+
+nav:
+  - " ": index.md
+  - Zabbix:
+    - 1. 服务端: zabbix/src/1.index.md
+    - 2. 客服端: zabbix/src/2.agent2.md
+    - 3. 监控项: zabbix/src/3.items.md
+    - 4. 触发器: zabbix/src/4.triggers.md
+    - 5. 告警: 
+      - 1. 邮件: zabbix/src/5.email.md
+      - 2. 微信: zabbix/src/6.wx.md
+    - 6. 监控MySQL: zabbix/src/7.monitor_mysql.md
+    - 7. 自动化监控: zabbix/src/8.auto_find.md
