@@ -17,14 +17,28 @@ theme:
   language: 'zh'
   features:
     - navigation.tabs
-  palette:
-    scheme: default
-    primary: 'indigo'
-    accent: 'indigo'
+  # palette:
+  #   scheme: default
+  #   primary: 'indigo'
+  #   accent: 'indigo'
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-  logo: 'static/imgs/favicon.ico'
+  logo: 'https://sf-blog-images.oss-cn-hangzhou.aliyuncs.com/R1.png'
 
 plugins:
   - search
@@ -41,7 +55,7 @@ extra:
     theme: github-light
   social:
     - icon: fontawesome/brands/github-alt
-      link: 'https://caimengzhi.gitee.io/nav/'
+      link: 'https://github.com/BetaInnovation'
 
 # Google Analytics
 #google_analytics:
@@ -92,14 +106,7 @@ markdown_extensions:
   - pymdownx.tabbed
 
 nav:
-  - " ": index.md
-  - Zabbix:
-    - 1. 服务端: zabbix/src/1.index.md
-    - 2. 客服端: zabbix/src/2.agent2.md
-    - 3. 监控项: zabbix/src/3.items.md
-    - 4. 触发器: zabbix/src/4.triggers.md
-    - 5. 告警: 
-      - 1. 邮件: zabbix/src/5.email.md
-      - 2. 微信: zabbix/src/6.wx.md
-    - 6. 监控MySQL: zabbix/src/7.monitor_mysql.md
-    - 7. 自动化监控: zabbix/src/8.auto_find.md
+  - Home: index.md
+  - blog:
+    - 如何搭建博客: blog/src/1.index.md
+ 

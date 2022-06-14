@@ -13,8 +13,8 @@ jobs:
         with:
           fetch-depth: 0
       - run: pip3 install --user -r requirements.txt
-      - run: git config --global user.email "ttlarva@qq.com"
-      - run: git config --global user.name "ttlarva"
+      - run: git config --global user.email "BetaInnovation@BetaInnovation.com"
+      - run: git config --global user.name "BetaInnovation"
       - run: sh ./scripts/run-mike.sh
       - run: git checkout docs_output
       - run: git checkout master -- CNAME
