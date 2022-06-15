@@ -38,7 +38,9 @@ theme:
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-  logo: 'https://sf-blog-images.oss-cn-hangzhou.aliyuncs.com/R1.png'
+  # logo: 'static/imgs/favicon.ico'
+  logo: 'https://sf-blog-images.oss-cn-hangzhou.aliyuncs.com/R.png'
+  favicon: static/imgs/R1.png
 
 plugins:
   - search
