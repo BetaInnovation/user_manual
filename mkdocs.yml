@@ -17,10 +17,10 @@ theme:
   language: 'zh'
   features:
     - navigation.tabs
-  # palette:
-  #   scheme: default
-  #   primary: 'indigo'
-  #   accent: 'indigo'
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
 
   palette: 
     # Palette toggle for light mode
@@ -39,7 +39,7 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
   # logo: 'static/imgs/favicon.ico'
-  logo: 'https://sf-blog-images.oss-cn-hangzhou.aliyuncs.com/R.png'
+  logo: 'https://sf-blog-images.oss-cn-hangzhou.aliyuncs.com/R.svg'
   favicon: static/imgs/R1.png
 
 plugins:
