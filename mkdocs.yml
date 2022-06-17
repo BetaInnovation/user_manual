@@ -51,12 +51,13 @@ plugins:
 
 # Customization
 extra:
+  generator: false
   utteranc:
     repo: ansible
     issueTerm: pathname
     theme: github-light
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: 'https://github.com/BetaInnovation'
 
 # Google Analytics
